@@ -1,0 +1,148 @@
+(.venv) @JoseEmmanuelVG ➜ /workspaces/Microsoft-Agent-Framework-Workshop---JEVG (main) $ # Actualiza paquetes
+sudo apt-get update
+
+# Instala dependencias necesarias
+sudo apt-get install -y ca-certificates curl apt-transport-https lsb-release gnupg
+
+# Descarga e instala el repositorio oficial de Microsoft
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+# Verifica instalación
+az --version
+Get:1 https://dl.yarnpkg.com/debian stable InRelease
+Get:2 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]
+Get:4 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease [3961 B]
+Get:5 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main all Packages [643 B]
+Get:6 https://dl.yarnpkg.com/debian stable/main all Packages [11.8 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:8 https://dl.yarnpkg.com/debian stable/main amd64 Packages [11.8 kB]
+Get:9 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [73.0 kB]
+Get:10 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable/main amd64 Packages [4557 B]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [33.1 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1680 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2925 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2050 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1942 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [35.9 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [33.9 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.4 kB]
+Get:25 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1174 kB]
+Get:26 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2781 kB]
+Fetched 35.0 MB in 2s (14.1 MB/s)             
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+ca-certificates is already the newest version (20240203).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+apt-transport-https is already the newest version (2.8.3).
+lsb-release is already the newest version (12.0-2).
+gnupg is already the newest version (2.4.4-2ubuntu17.3).
+gnupg set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
+Hit:1 https://dl.yarnpkg.com/debian stable InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:6 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+apt-transport-https is already the newest version (2.8.3).
+ca-certificates is already the newest version (20240203).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+gnupg is already the newest version (2.4.4-2ubuntu17.3).
+lsb-release is already the newest version (12.0-2).
+0 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
+Types: deb
+URIs: https://packages.microsoft.com/repos/azure-cli/
+Suites: noble
+Components: main
+Architectures: amd64
+Signed-by: /etc/apt/keyrings/microsoft.gpg
+Hit:1 https://dl.yarnpkg.com/debian stable InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 https://packages.microsoft.com/repos/azure-cli noble InRelease [3564 B]
+Hit:4 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:5 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:9 https://packages.microsoft.com/repos/azure-cli noble/main amd64 Packages [1763 B]
+Fetched 5327 B in 1s (8797 B/s)
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  azure-cli
+0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+Need to get 54.7 MB of archives.
+After this operation, 613 MB of additional disk space will be used.
+Get:1 https://packages.microsoft.com/repos/azure-cli noble/main amd64 azure-cli amd64 2.80.0-1~noble [54.7 MB]
+Fetched 54.7 MB in 1s (109 MB/s)   
+Selecting previously unselected package azure-cli.
+(Reading database ... 58631 files and directories currently installed.)
+Preparing to unpack .../azure-cli_2.80.0-1~noble_amd64.deb ...
+Unpacking azure-cli (2.80.0-1~noble) ...
+Setting up azure-cli (2.80.0-1~noble) ...
+azure-cli                         2.80.0
+
+core                              2.80.0
+telemetry                          1.1.0
+
+Dependencies:
+msal                            1.34.0b1
+azure-mgmt-resource               23.3.0
+
+Python location '/opt/az/bin/python3'
+Config directory '/home/codespace/.azure'
+Extensions directory '/home/codespace/.azure/cliextensions'
+
+Python (Linux) 3.13.9 (main, Nov 11 2025, 12:32:04) [GCC 13.3.0]
+
+Legal docs and information: aka.ms/AzureCliLegal
+
+
+Your CLI is up-to-date.
+(.venv) @JoseEmmanuelVG ➜ /workspaces/Microsoft-Agent-Framework-Workshop---JEVG (main) $ az login --use-device-code
+To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code A3NDS2GKD to authenticate.
+az login --use-device-code
+
+Retrieving tenants and subscriptions for the selection...
+
+[Tenant and subscription selection]
+
+No     Subscription name     Subscription ID                       Tenant
+-----  --------------------  ------------------------------------  -----------------
+[1] *  Azure subscription 1  b9f8cab0-c5dc-4029-878b-b82153ef9ceb  iLink Systems Inc
+
+The default is marked with an *; the default tenant is 'iLink Systems Inc' and subscription is 'Azure subscription 1' (b9f8cab0-c5dc-4029-878b-b82153ef9ceb).
+
+Select a subscription and tenant (Type a number or Enter for no changes): Invalid selection.
+Select a subscription and tenant (Type a number or Enter for no changes): 1
+
+Tenant: iLink Systems Inc
+Subscription: Azure subscription 1 (b9f8cab0-c5dc-4029-878b-b82153ef9ceb)
+
+[Announcements]
+With the new Azure CLI login experience, you can select the subscription you want to use more easily. Learn more about it and its configuration at https://go.microsoft.com/fwlink/?linkid=2271236
+
+If you encounter any problem, please open an issue at https://aka.ms/azclibug
+
+[Warning] The login output has been updated. Please be aware that it no longer displays the full list of available subscriptions by default.
+
+(.venv) @JoseEmmanuelVG ➜ /workspaces/Microsoft-Agent-Framework-Workshop---JEVG (m
+(.venv) @JoseEmmanuelVG ➜ /workspaces/Microsoft-Agent-Framework-Workshop---JEVG (m
+(.venv) @JoseEmmanuelVG ➜ /workspaces/Microsoft-Agent-Framework-Workshop---JEVG (m
+(.venv) @JoseEmmanuelVG ➜ /workspaces/Microsoft-Agent-Framework-Workshop---JEVG (main) $ 

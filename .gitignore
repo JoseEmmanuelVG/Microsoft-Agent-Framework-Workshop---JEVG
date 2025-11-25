@@ -1,0 +1,7 @@
+*.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+unset AZURE_PROJECT_API_KEY
+unset AZURE_PROJECT_ENDPOINT
